@@ -1,0 +1,93 @@
+@import "base.less";
+@import "common.less";
+.head {
+  height: 60px;
+  line-height: 60px;
+  background-color: #f9f9f9;
+  margin-top: -20px;
+  .tit {
+    text-align: center;
+    font-size: 16px;
+    span {
+      cursor: default;
+      &::before {
+        font-size: 20px;
+        content: "\e617";
+        font-family: "iconfont";
+        margin-right: 5px;
+        color: palevioletred;
+      }
+    }
+  }
+}
+.user {
+  //   height: 600px;
+  background-color: #f7f7f7;
+  //   margin-top: -20px;
+  padding: 20px 50px;
+  .head {
+    float: left;
+    width: 150px;
+    height: 150px;
+    // border: 1px solid red;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 40px;
+    img {
+      width: 100%;
+    }
+  }
+  .content {
+    float: left;
+    width: 300px;
+    height: 100px;
+    margin-top: 10px;
+    padding: 20px 0;
+    span {
+      font-size: 16px;
+    }
+    .detail {
+      display: inline-block;
+      font-size: 13px;
+      margin-top: 30px;
+    }
+    .userName {
+      &::before {
+        content: "\e660";
+        font-family: "iconfont";
+        margin-right: 5px;
+      }
+    }
+  }
+}
+table {
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  tr {
+    td {
+      font-size: 14px;
+      span {
+        font-size: 28px;
+        padding-right: 10px;
+        cursor: pointer;
+      }
+      a {
+        display: inline-block;
+        // width: 60px;
+        color: #fff;
+        font-size: 12px;
+        background-color: #666;
+        border-radius: 3px;
+        padding: 5px;
+        &:hover {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+#foot {
+  margin-top: 70px;
+}

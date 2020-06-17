@@ -1,0 +1,88 @@
+@import "base.less";
+@import "common.less";
+// 次导航部分
+.head {
+  height: 60px;
+  line-height: 60px;
+  background-color: #f9f9f9;
+  margin-top: -20px;
+  .navigation {
+    ul {
+      margin: 0 auto;
+      margin-left: 50%;
+      li {
+        float: left;
+        padding-right: 30px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .red {
+        color: red;
+      }
+    }
+  }
+}
+//主题内容部分
+#content {
+  background-color: #f7f7f7;
+  ul {
+    margin-top: 20px;
+    width: 100%;
+    display: none;
+    li {
+      float: left;
+      width: 554px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0.2em 0.2em 1em;
+      background-color: #fff;
+      margin-right: 30px;
+      padding: 0 20px;
+      margin-bottom: 30px;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+      .tit {
+        font-size: 15px;
+      }
+      a {
+        color: #666;
+      }
+    }
+  }
+  .conShow {
+    display: block;
+  }
+}
+//分页按钮
+.page {
+  margin: 20px 0;
+  text-align: center;
+  ul {
+    display: inline-block;
+    margin: 0 auto;
+    li {
+      float: left;
+      a {
+        display: inline-block;
+        width: 50px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        border: 1px solid #0e7886;
+        border-radius: 10px;
+        margin-right: 10px;
+        &:hover {
+          text-decoration: none;
+        }
+        &:hover {
+          transition: all 1s;
+          background-color: green;
+        }
+      }
+    }
+  }
+}

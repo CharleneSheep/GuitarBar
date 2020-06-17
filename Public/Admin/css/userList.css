@@ -1,0 +1,16 @@
+.result {
+    margin-top: 5px;
+    margin-left: -82px;
+}
+
+.result span {
+    color: red;
+}
+
+.header_content a {
+    font-size: 15px;
+}
+
+.header_content span {
+    font-size: 15px;
+}

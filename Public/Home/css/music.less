@@ -1,0 +1,174 @@
+@import "base.less";
+@import "common.less";
+
+.head {
+  height: 60px;
+  line-height: 60px;
+  background-color: #f9f9f9;
+  margin-top: -20px;
+  .navigation {
+    ul {
+      margin: 0 auto;
+      margin-left: 50%;
+      li {
+        float: left;
+        padding-right: 30px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .red {
+        color: red;
+      }
+    }
+  }
+}
+/* 主体部分 */
+.music_content {
+  // background-color: #f1f1f1;
+  padding: 10px 0;
+  .singer {
+    position: relative;
+    .singer_tit {
+      h3 {
+        float: left;
+        font-size: 18px;
+        color: #d43724;
+        border-left: 6px solid #d43724;
+        padding-left: 12px;
+        height: 30px;
+        line-height: 30px;
+      }
+      span {
+        float: right;
+        position: absolute;
+        top: 25px;
+        right: 0%;
+        a {
+          color: #d43724;
+          font-size: 14px;
+          // margin-right: 5px;
+          span {
+            position: relative;
+            top: 0%;
+            left: 0%;
+          }
+        }
+      }
+    }
+    .singer_content {
+      margin-top: 20px;
+      ul {
+        padding: 0 30px;
+        li {
+          position: relative;
+          float: left;
+          width: 190px;
+          height: 155px;
+          margin-right: 40px;
+          margin-bottom: 30px;
+          overflow: hidden;
+          &:nth-child(5n) {
+            margin-right: 0;
+          }
+          a {
+            display: block;
+            overflow: hidden;
+            &:hover img {
+              transform: scale(1.1);
+            }
+            img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              transition: All 0.5s ease-in-out;
+              -webkit-transition: All 0.5s ease-in-out;
+              -moz-transition: All 0.5s ease-in-out;
+              -o-transition: All 0.5s ease-in-out;
+            }
+            em {
+              display: block;
+              width: 100%;
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              color: #fff;
+              font-size: 16px;
+              height: 25px;
+              line-height: 25px;
+              padding-left: 10px;
+              background: rgba(0, 0, 0, 0.6);
+            }
+          }
+        }
+      }
+    }
+  }
+  /* 吉他曲部分 */
+  .music {
+    .music_tit {
+      h3 {
+        float: left;
+        font-size: 18px;
+        color: #d43724;
+        border-left: 6px solid #d43724;
+        padding-left: 12px;
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+    .music_content {
+      ul {
+        padding: 30px;
+        display: none;
+        li {
+          border-top: 1px solid #ccc;
+          padding: 20px 50px;
+          &:hover {
+            background-color: #fafafa;
+          }
+          a {
+            .like {
+              color: #ffc0cb;
+            }
+            display: block;
+            .singerHead {
+              float: left;
+              width: 80px;
+              height: 80px;
+              border-radius: 50%;
+              overflow: hidden;
+              margin-right: 30px;
+              img {
+                width: 100%;
+              }
+            }
+            .music_main {
+              float: left;
+              h3 {
+                color: #000;
+                font-size: 16px;
+                margin: 0;
+                margin-top: 15px;
+                margin-bottom: 10px;
+              }
+            }
+            span {
+              float: right;
+              font-size: 28px;
+              line-height: 80px;
+              margin-right: 20px;
+              color: #679926;
+              display: none;
+            }
+          }
+          &:hover span {
+            display: block;
+          }
+        }
+      }
+      .conShow {
+        display: block;
+      }
+    }
+  }
+}
